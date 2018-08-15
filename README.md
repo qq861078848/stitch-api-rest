@@ -10,7 +10,7 @@ Follow the instructions in [Using MongoDB Stitch to Create a Microservices API L
 
 We'll use Stitch [Services](https://docs.mongodb.com/stitch/services/), specifically the [HTTP Service](https://docs.mongodb.com/stitch/reference/partner-services/http/) to make the API RESTful.
 
-In the Stitch UI, select **Services** from the menu the left and then click the **Add a Service** button to open the Add a Service page. Select the HTTP service and name it getProductsByName:
+In the Stitch UI, select **Services** from the menu the left and then click the **Add a Service** button to open the Add a Service page. Select the HTTP service and name it **getProductsByName**:
 
 ![](images/add-a-service.png)
 
@@ -20,7 +20,7 @@ Click the **Add Service** button to open the Incoming Webhooks page:
 
 As you can see, the HTTP service will be exposed via a webhook. Click the **Add Incoming Webhook** button to open the webhook settings page and set the following:
 
-    Webhook Name: products
+    Webhook Name: <b>products</b>
     Respond with Result: enabled
     Run Webhook As: System
     HTTP Method: GET
