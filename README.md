@@ -18,18 +18,11 @@ Click the **Add Service** button to open the Incoming Webhooks page:
 
 ![](images/add-service.png)
 
-As you can see, the HTTP service will be exposed via a webhook. Click the **Add Incoming Webhook** button to open the webhook settings page and set the following:
-
-    Webhook Name: <b>products</b>
-    Respond with Result: enabled
-    Run Webhook As: System
-    HTTP Method: GET
-    Request Validation: Require Secret As Query Param
-    Secret: MySecret (or whatever you want)
+As you can see, the HTTP service will be exposed via a webhook. Click the **Add Incoming Webhook** button to open the webhook settings page and set values as shownin the following screen grab (you can set the secret to whatever you like):
 
 ![](images/webhook-settings.png)
 
-Click **Save** to open the Function Editor. Replace the function code with the following, which is simply executing the getProductsByName function we've previously created:
+Click **Save** to open the Function Editor. Replace the function code with the following, which is simply executing the `getProductsByName` function we've previously created:
 
 In the Function Editor, replace the code with the following:
 ```javascript
@@ -50,7 +43,7 @@ Then click the disk icon to save the service function:
 
  ![](images/webhook-url.png)
 
- Copy this URL, append your secret and paste it into your favorite REST tool such as [Postman](https://www.getpostman.com/) or in this case, since its a GET request, your browser will do:
+ Copy this URL, append your secret and paste it into your favorite REST tool such as [Postman](https://www.getpostman.com/) or in this case, since it's a GET request, your browser will do:
 
  [https://webhooks.mongodb-stitch.com/api/client/v2.0/app/sportsstore-skxjg/service/getProductsByName/incoming_webhook/products?secret=MySecret](https://webhooks.mongodb-stitch.com/api/client/v2.0/app/sportsstore-skxjg/service/getProductsByName/incoming_webhook/products?secret=MySecret)
 
@@ -62,7 +55,7 @@ Optionally append an argument to the API call to filter the results:
 
 ![](images/browser-arg.png)
 
-
+And now you've REST enabled your service.
 
 
 
