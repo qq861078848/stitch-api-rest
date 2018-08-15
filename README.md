@@ -35,6 +35,7 @@ In the Function Editor, replace the code with the following:
 ```
 
 Then click the disk icon to save the service function:
+
  ![](images/service-function.png)
 
  ## Using the REST API
